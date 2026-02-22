@@ -22,7 +22,6 @@ export default function Navbar() {
             <Box alignItems={"center"} display="flex" gap={0}>
               <ShopIcon sx={{ mr: 1 }} />
               Kashop
-
             </Box>
 
           </Typography>

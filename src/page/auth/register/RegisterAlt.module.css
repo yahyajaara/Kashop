@@ -1,0 +1,134 @@
+/* Alternate light / pastel design for the register page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  background: linear-gradient(180deg, #2a5f8a 0%, #fffaf6 100%);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #0f1724;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 34px;
+  box-shadow: 0 12px 30px rgba(20,20,40,0.06), 0 2px 6px rgba(16,24,40,0.04);
+  border: 1px solid rgba(15,23,36,0.04);
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b1220;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #445059;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form label {
+  font-size: 13px;
+  color: #23303b;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e6eef6;
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  color: #0b1220;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow 150ms ease, border-color 150ms ease, transform 120ms ease;
+}
+
+.form input::placeholder {
+  color: #9aa6b2;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: #a3d8ff;
+  box-shadow: 0 6px 18px rgba(163,216,255,0.28);
+  transform: translateY(-1px);
+}
+
+.help {
+  font-size: 12px;
+  color: #5b6b72;
+}
+
+.button {
+  margin-top: 6px;
+  height: 46px;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(90deg, #7dd3fc 0%, #60a5fa 100%);
+  box-shadow: 0 10px 24px rgba(96,165,250,0.16);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(96,165,250,0.22);
+}
+
+.orRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6b7780;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.divider {
+  height: 1px;
+  background: #f0f6fb;
+  flex: 1;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #4b5563;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .card { padding: 20px; border-radius: 12px; }
+  .title { font-size: 18px; }
+}
