@@ -1,0 +1,44 @@
+/* Light / pastel design for the login page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  background: linear-gradient(180deg, #2a5f8a 0%, #fffaf6 100%);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #0f1724;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 34px;
+  box-shadow: 0 12px 30px rgba(20,20,40,0.06), 0 2px 6px rgba(16,24,40,0.04);
+  border: 1px solid rgba(15,23,36,0.04);
+}
+
+.errorBox {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+  border-left: 4px solid #d32f2f;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #4b5563;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+}

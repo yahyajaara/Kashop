@@ -18,7 +18,7 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
 
-          <Typography sx={{ flexGrow: 1 }}>
+          <Typography component="div" sx={{ flexGrow: 1 }}>
             <Box alignItems={"center"} display="flex" gap={0}>
               <ShopIcon sx={{ mr: 1 }} />
               Kashop
